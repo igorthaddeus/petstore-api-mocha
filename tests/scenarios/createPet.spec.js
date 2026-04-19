@@ -3,7 +3,7 @@ const PetAPI = require("../apis/baseAPi");
 
 const api = new PetAPI("https://petstore.swagger.io/v2");
 
-describe("Create Pet", () => {
+describe("POST /pet", () => {
     it("Verify API creates pet successfully with valid payload", async () => {
         const payload = {
             id: 123456,
