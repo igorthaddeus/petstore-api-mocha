@@ -1,0 +1,24 @@
+{
+  "name": "test-mocha",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "create": "mocha 'tests/scenarios/createPet.spec.js' --timeout 5000",
+    "findStatus": "mocha 'tests/scenarios/findByStatus.spec.js' --timeout 5000",
+    "delete": "mocha 'tests/scenarios/delete.spec.js' --timeout 5000",
+    "run:all": "mocha 'tests/scenario/*.js' --timeout 5000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "allure-mocha": "^3.7.1",
+    "chai": "^4.3.7",
+    "chai-http": "^4.4.0",
+    "chai-json-schema": "^1.5.1",
+    "dotenv": "^7.0.0",
+    "mocha": "^10.8.2",
+    "supertest": "^7.2.2"
+  }
+}
